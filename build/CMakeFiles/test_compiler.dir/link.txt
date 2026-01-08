@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/test_compiler.dir/src/main.c.o CMakeFiles/test_compiler.dir/src/util.c.o CMakeFiles/test_compiler.dir/src/parse.c.o CMakeFiles/test_compiler.dir/src/codegen.c.o CMakeFiles/test_compiler.dir/src/print.c.o CMakeFiles/test_compiler.dir/lex.yy.c.o -o test_compiler 

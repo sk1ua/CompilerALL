@@ -1,4 +1,0 @@
-/mnt/c/Users/15857/Desktop/课程/编译原理/tt/test_compilerALL/build/CMakeFiles/test_compiler.dir
-/mnt/c/Users/15857/Desktop/课程/编译原理/tt/test_compilerALL/build/CMakeFiles/machine.dir
-/mnt/c/Users/15857/Desktop/课程/编译原理/tt/test_compilerALL/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/15857/Desktop/课程/编译原理/tt/test_compilerALL/build/CMakeFiles/rebuild_cache.dir
