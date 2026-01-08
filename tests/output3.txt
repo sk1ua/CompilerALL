@@ -1,0 +1,513 @@
+int	int	
+ID	global_x	
+=	=	
+NUM	100	
+;	;	
+int	int	
+ID	add	
+(	(	
+int	int	
+ID	a	
+,	,	
+int	int	
+ID	b	
+)	)	
+{	{	
+int	int	
+ID	result	
+;	;	
+ID	result	
+=	=	
+ID	a	
++	+	
+ID	b	
+;	;	
+return	return	
+ID	result	
+;	;	
+}	}	
+int	int	
+ID	factorial	
+(	(	
+int	int	
+ID	n	
+)	)	
+{	{	
+int	int	
+ID	res	
+;	;	
+int	int	
+ID	i	
+=	=	
+NUM	1	
+;	;	
+ID	res	
+=	=	
+NUM	1	
+;	;	
+do	do	
+{	{	
+ID	res	
+=	=	
+ID	res	
+*	*	
+ID	i	
+;	;	
+ID	i	
+=	=	
+ID	i	
++	+	
+NUM	1	
+;	;	
+}	}	
+while	while	
+(	(	
+ID	i	
+<=	<=	
+ID	n	
+)	)	
+;	;	
+return	return	
+ID	res	
+;	;	
+}	}	
+ID	main	
+(	(	
+)	)	
+{	{	
+int	int	
+ID	x	
+=	=	
+NUM	10	
+,	,	
+ID	y	
+=	=	
+NUM	5	
+,	,	
+ID	z	
+;	;	
+int	int	
+ID	a	
+[	[	
+NUM	3	
+]	]	
+;	;	
+int	int	
+ID	i	
+=	=	
+NUM	0	
+;	;	
+int	int	
+ID	sum	
+;	;	
+ID	x	
+=	=	
+ID	global_x	
+;	;	
+ID	a	
+[	[	
+NUM	0	
+]	]	
+=	=	
+NUM	1	
+;	;	
+ID	a	
+[	[	
+NUM	1	
+]	]	
+=	=	
+NUM	2	
+;	;	
+ID	a	
+[	[	
+NUM	2	
+]	]	
+=	=	
+NUM	3	
+;	;	
+while	while	
+(	(	
+ID	i	
+<	<	
+NUM	3	
+)	)	
+{	{	
+ID	sum	
+=	=	
+ID	sum	
++	+	
+ID	a	
+[	[	
+ID	i	
+]	]	
+;	;	
+ID	i	
+=	=	
+ID	i	
++	+	
+NUM	1	
+;	;	
+}	}	
+write	write	
+ID	sum	
+;	;	
+ID	z	
+=	=	
+ID	add	
+(	(	
+ID	x	
+,	,	
+ID	y	
+)	)	
+;	;	
+write	write	
+ID	z	
+;	;	
+ID	z	
+=	=	
+ID	factorial	
+(	(	
+NUM	4	
+)	)	
+;	;	
+write	write	
+ID	z	
+;	;	
+switch	switch	
+(	(	
+ID	y	
+)	)	
+{	{	
+case	case	
+NUM	1	
+:	:	
+write	write	
+NUM	111	
+;	;	
+break	break	
+;	;	
+case	case	
+NUM	5	
+:	:	
+write	write	
+NUM	555	
+;	;	
+break	break	
+;	;	
+default	default	
+:	:	
+write	write	
+NUM	999	
+;	;	
+}	}	
+do	do	
+{	{	
+ID	y	
+=	=	
+ID	y	
+-	-	
+NUM	1	
+;	;	
+write	write	
+ID	y	
+;	;	
+}	}	
+while	while	
+(	(	
+ID	y	
+>	>	
+NUM	0	
+)	)	
+;	;	
+return	return	
+;	;	
+}	}	
+Program (1)
+  declaration_stat (1)
+    TYPE: int
+    ID: global_x
+    INIT
+      INT: 100
+    SEMI
+  function_declaration (3)
+    ID: add
+    LC
+      param_declaration_stat (3)
+        TYPE: int
+        ID: a
+    COMMA
+      param_declaration_stat (3)
+        TYPE: int
+        ID: b
+    RP
+    function_body (3)
+    LC
+      declaration_stat (4)
+        TYPE: int
+        ID: result
+        SEMI
+      binary_expr (5)
+        ID result
+        ASSIGN
+        binary_expr (5)
+          ID a
+          PLUS
+          ID b
+        SEMI
+      return_stat (6)
+        RETURN
+        ID result
+        SEMI
+    RC
+  function_declaration (9)
+    ID: factorial
+    LC
+      param_declaration_stat (9)
+        TYPE: int
+        ID: n
+    RP
+    function_body (9)
+    LC
+      declaration_stat (10)
+        TYPE: int
+        ID: res
+        SEMI
+      declaration_stat (11)
+        TYPE: int
+        ID: i
+        INIT
+          INT: 1
+        SEMI
+      binary_expr (12)
+        ID res
+        ASSIGN
+        INT: 1
+        SEMI
+      do_while_stat (13)
+        DO
+        compund_stat (13)
+          LC
+          binary_expr (14)
+            ID res
+            ASSIGN
+            binary_expr (14)
+              ID res
+              STAR
+              ID i
+            SEMI
+          binary_expr (15)
+            ID i
+            ASSIGN
+            binary_expr (15)
+              ID i
+              PLUS
+              INT: 1
+            SEMI
+          RC
+        WHILE
+        LP
+        binary_expr (16)
+          ID i
+          LE
+          ID n
+        RP
+        SEMI
+      return_stat (17)
+        RETURN
+        ID res
+        SEMI
+    RC
+  function_declaration (20)
+    ID: main
+    LC
+    RP
+    function_body (20)
+    LC
+      declaration_stat (21)
+        TYPE: int
+        ID: x
+        INIT
+          INT: 10
+        SEMI
+      declaration_stat (21)
+        TYPE: int
+        ID: y
+        INIT
+          INT: 5
+        SEMI
+      declaration_stat (21)
+        TYPE: int
+        ID: z
+        SEMI
+      declaration_stat (22)
+        TYPE: int[3]
+        ID: a
+        SEMI
+      declaration_stat (23)
+        TYPE: int
+        ID: i
+        INIT
+          INT: 0
+        SEMI
+      declaration_stat (24)
+        TYPE: int
+        ID: sum
+        SEMI
+      binary_expr (26)
+        ID x
+        ASSIGN
+        ID global_x
+        SEMI
+      binary_expr (27)
+        subscript_expr (27)
+          ID a
+          LB
+          INT: 0
+          RB
+        ASSIGN
+        INT: 1
+        SEMI
+      binary_expr (28)
+        subscript_expr (28)
+          ID a
+          LB
+          INT: 1
+          RB
+        ASSIGN
+        INT: 2
+        SEMI
+      binary_expr (29)
+        subscript_expr (29)
+          ID a
+          LB
+          INT: 2
+          RB
+        ASSIGN
+        INT: 3
+        SEMI
+      while_stat (31)
+        WHILE
+        LP
+        binary_expr (31)
+          ID i
+          LT
+          INT: 3
+        RP
+        compund_stat (31)
+          LC
+          binary_expr (32)
+            ID sum
+            ASSIGN
+            binary_expr (32)
+              ID sum
+              PLUS
+              subscript_expr (32)
+                ID a
+                LB
+                ID i
+                RB
+            SEMI
+          binary_expr (33)
+            ID i
+            ASSIGN
+            binary_expr (33)
+              ID i
+              PLUS
+              INT: 1
+            SEMI
+          RC
+      write_stat (36)
+        WRITE
+        ID sum
+        SEMI
+      binary_expr (38)
+        ID z
+        ASSIGN
+        call_expr (38)
+          ID add
+          LP
+          ID x
+          COMMA
+          ID y
+          RP
+        SEMI
+      write_stat (39)
+        WRITE
+        ID z
+        SEMI
+      binary_expr (41)
+        ID z
+        ASSIGN
+        call_expr (41)
+          ID factorial
+          LP
+          INT: 4
+          RP
+        SEMI
+      write_stat (42)
+        WRITE
+        ID z
+        SEMI
+      switch_stat (44)
+        SWITCH
+        LP
+        ID y
+        RP
+        LC
+        case_clause (45)
+          CASE
+          INT: 1
+          COLON
+        write_stat (46)
+          WRITE
+          INT: 111
+          SEMI
+          BREAK
+          SEMI
+        case_clause (48)
+          CASE
+          INT: 5
+          COLON
+        write_stat (49)
+          WRITE
+          INT: 555
+          SEMI
+          BREAK
+          SEMI
+        default_clause (0)
+          DEFAULT
+          COLON
+        write_stat (52)
+          WRITE
+          INT: 999
+          SEMI
+        RC
+      do_while_stat (55)
+        DO
+        compund_stat (55)
+          LC
+          binary_expr (56)
+            ID y
+            ASSIGN
+            binary_expr (56)
+              ID y
+              MINUS
+              INT: 1
+            SEMI
+          write_stat (57)
+            WRITE
+            ID y
+            SEMI
+          RC
+        WHILE
+        LP
+        binary_expr (58)
+          ID y
+          GT
+          INT: 0
+        RP
+        SEMI
+      return_stat (60)
+        RETURN
+        SEMI
+    RC

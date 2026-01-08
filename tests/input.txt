@@ -1,0 +1,45 @@
+int global = 100, b = 5;
+int add(int a, int b) {
+    int res = a + b;
+    return res;
+}
+void doSomething() {
+    int a = 5;
+    int k = 2;
+    int y = 0;
+    do {
+        a = a + 1;
+    } while(a < 10);
+    switch (k) {
+        case 1:
+            k = 1;
+            break;
+        case 2:
+            k = 2;
+            break;
+        default:
+            k = -1;
+    }
+}
+
+void anotherFunc() {
+    int x = 3;                    
+    x = x + 1;
+    if(x < 10) {
+        x = x + 1;
+    } else {
+        x = x - 1;
+    }
+}
+
+int main() {
+    int c;
+    int a = 1;
+    int b = 2;
+    read c;
+    c = c + add(a, b);   
+    write c;
+    doSomething();
+    anotherFunc();
+    return 0;
+}

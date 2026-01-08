@@ -1,0 +1,421 @@
+int	int	
+ID	global	
+=	=	
+NUM	100	
+,	,	
+ID	b	
+=	=	
+NUM	5	
+;	;	
+int	int	
+ID	add	
+(	(	
+int	int	
+ID	a	
+,	,	
+int	int	
+ID	b	
+)	)	
+{	{	
+int	int	
+ID	res	
+=	=	
+ID	a	
++	+	
+ID	b	
+;	;	
+return	return	
+ID	res	
+;	;	
+}	}	
+void	void	
+ID	doSomething	
+(	(	
+)	)	
+{	{	
+int	int	
+ID	a	
+=	=	
+NUM	5	
+;	;	
+int	int	
+ID	k	
+=	=	
+NUM	2	
+;	;	
+int	int	
+ID	y	
+=	=	
+NUM	0	
+;	;	
+do	do	
+{	{	
+ID	a	
+=	=	
+ID	a	
++	+	
+NUM	1	
+;	;	
+}	}	
+while	while	
+(	(	
+ID	a	
+<	<	
+NUM	10	
+)	)	
+;	;	
+switch	switch	
+(	(	
+ID	k	
+)	)	
+{	{	
+case	case	
+NUM	1	
+:	:	
+ID	k	
+=	=	
+NUM	1	
+;	;	
+break	break	
+;	;	
+case	case	
+NUM	2	
+:	:	
+ID	k	
+=	=	
+NUM	2	
+;	;	
+break	break	
+;	;	
+default	default	
+:	:	
+ID	k	
+=	=	
+-	-	
+NUM	1	
+;	;	
+}	}	
+}	}	
+void	void	
+ID	anotherFunc	
+(	(	
+)	)	
+{	{	
+int	int	
+ID	x	
+=	=	
+NUM	3	
+;	;	
+ID	x	
+=	=	
+ID	x	
++	+	
+NUM	1	
+;	;	
+if	if	
+(	(	
+ID	x	
+<	<	
+NUM	10	
+)	)	
+{	{	
+ID	x	
+=	=	
+ID	x	
++	+	
+NUM	1	
+;	;	
+}	}	
+else	else	
+{	{	
+ID	x	
+=	=	
+ID	x	
+-	-	
+NUM	1	
+;	;	
+}	}	
+}	}	
+int	int	
+ID	main	
+(	(	
+)	)	
+{	{	
+int	int	
+ID	c	
+;	;	
+int	int	
+ID	a	
+=	=	
+NUM	1	
+;	;	
+int	int	
+ID	b	
+=	=	
+NUM	2	
+;	;	
+read	read	
+ID	c	
+;	;	
+ID	c	
+=	=	
+ID	c	
++	+	
+ID	add	
+(	(	
+ID	a	
+,	,	
+ID	b	
+)	)	
+;	;	
+write	write	
+ID	c	
+;	;	
+ID	doSomething	
+(	(	
+)	)	
+;	;	
+ID	anotherFunc	
+(	(	
+)	)	
+;	;	
+return	return	
+NUM	0	
+;	;	
+}	}	
+Program (1)
+  declaration_stat (1)
+    TYPE: int
+    ID: global
+    INIT
+      INT: 100
+    SEMI
+  declaration_stat (1)
+    TYPE: int
+    ID: b
+    INIT
+      INT: 5
+    SEMI
+  function_declaration (2)
+    ID: add
+    LC
+      param_declaration_stat (2)
+        TYPE: int
+        ID: a
+    COMMA
+      param_declaration_stat (2)
+        TYPE: int
+        ID: b
+    RP
+    function_body (2)
+    LC
+      declaration_stat (3)
+        TYPE: int
+        ID: res
+        INIT
+          binary_expr (3)
+            ID a
+            PLUS
+            ID b
+        SEMI
+      return_stat (4)
+        RETURN
+        ID res
+        SEMI
+    RC
+  function_declaration (6)
+    ID: doSomething
+    LC
+    RP
+    function_body (6)
+    LC
+      declaration_stat (7)
+        TYPE: int
+        ID: a
+        INIT
+          INT: 5
+        SEMI
+      declaration_stat (8)
+        TYPE: int
+        ID: k
+        INIT
+          INT: 2
+        SEMI
+      declaration_stat (9)
+        TYPE: int
+        ID: y
+        INIT
+          INT: 0
+        SEMI
+      do_while_stat (10)
+        DO
+        compund_stat (10)
+          LC
+          binary_expr (11)
+            ID a
+            ASSIGN
+            binary_expr (11)
+              ID a
+              PLUS
+              INT: 1
+            SEMI
+          RC
+        WHILE
+        LP
+        binary_expr (12)
+          ID a
+          LT
+          INT: 10
+        RP
+        SEMI
+      switch_stat (13)
+        SWITCH
+        LP
+        ID k
+        RP
+        LC
+        case_clause (14)
+          CASE
+          INT: 1
+          COLON
+        binary_expr (15)
+          ID k
+          ASSIGN
+          INT: 1
+          SEMI
+          BREAK
+          SEMI
+        case_clause (17)
+          CASE
+          INT: 2
+          COLON
+        binary_expr (18)
+          ID k
+          ASSIGN
+          INT: 2
+          SEMI
+          BREAK
+          SEMI
+        default_clause (0)
+          DEFAULT
+          COLON
+        binary_expr (21)
+          ID k
+          ASSIGN
+          unary_expr (21)
+            NEG
+            INT: 1
+          SEMI
+        RC
+    RC
+  function_declaration (25)
+    ID: anotherFunc
+    LC
+    RP
+    function_body (25)
+    LC
+      declaration_stat (26)
+        TYPE: int
+        ID: x
+        INIT
+          INT: 3
+        SEMI
+      binary_expr (27)
+        ID x
+        ASSIGN
+        binary_expr (27)
+          ID x
+          PLUS
+          INT: 1
+        SEMI
+      if_stat (28)
+        IF
+        LP
+        binary_expr (28)
+          ID x
+          LT
+          INT: 10
+        RP
+        compund_stat (28)
+          LC
+          binary_expr (29)
+            ID x
+            ASSIGN
+            binary_expr (29)
+              ID x
+              PLUS
+              INT: 1
+            SEMI
+          RC
+        ELSE
+        compund_stat (30)
+          LC
+          binary_expr (31)
+            ID x
+            ASSIGN
+            binary_expr (31)
+              ID x
+              MINUS
+              INT: 1
+            SEMI
+          RC
+    RC
+  function_declaration (35)
+    ID: main
+    LC
+    RP
+    function_body (35)
+    LC
+      declaration_stat (36)
+        TYPE: int
+        ID: c
+        SEMI
+      declaration_stat (37)
+        TYPE: int
+        ID: a
+        INIT
+          INT: 1
+        SEMI
+      declaration_stat (38)
+        TYPE: int
+        ID: b
+        INIT
+          INT: 2
+        SEMI
+      read_stat (39)
+        READ
+        ID c
+        SEMI
+      binary_expr (40)
+        ID c
+        ASSIGN
+        binary_expr (40)
+          ID c
+          PLUS
+          call_expr (40)
+            ID add
+            LP
+            ID a
+            COMMA
+            ID b
+            RP
+        SEMI
+      write_stat (41)
+        WRITE
+        ID c
+        SEMI
+      call_expr (42)
+        ID doSomething
+        LP
+        RP
+        SEMI
+      call_expr (43)
+        ID anotherFunc
+        LP
+        RP
+        SEMI
+      return_stat (44)
+        RETURN
+        INT: 0
+        SEMI
+    RC

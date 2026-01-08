@@ -1,0 +1,46 @@
+int	int	
+ID	main	
+(	(	
+)	)	
+int	int	
+ID	c	
+;	;	
+int	int	
+ID	b	
+=	=	
+NUM	2	
+;	;	
+int	int	
+ID	result	
+=	=	
+ID	add	
+(	(	
+ID	a	
+,	,	
+ID	b	
+)	)	
+;	;	
+read	read	
+ID	c	
+;	;	
+write	write	
+ID	c	
+;	;	
+ID	doSomething	
+(	(	
+)	)	
+;	;	
+ID	anotherFunc	
+(	(	
+)	)	
+;	;	
+return	return	
+NUM	0	
+;	;	
+}	}	
+第 1 行，第 11 列：缺少 “{”。
+第 4 行，第 18 列：未能找到标识符定义：add
+第 4 行，第 22 列：未能找到标识符定义：a
+第 7 行，第 5 列：未能找到标识符定义：doSomething
+第 8 行，第 5 列：未能找到标识符定义：anotherFunc
+解析失败

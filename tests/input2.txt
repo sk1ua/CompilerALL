@@ -1,0 +1,10 @@
+int main() 
+    int c;
+    int b = 2;
+    int result = add(a, b);   
+    read c;
+    write c;
+    doSomething();
+    anotherFunc();
+    return 0;
+}
